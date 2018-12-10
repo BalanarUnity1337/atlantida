@@ -1,0 +1,91 @@
+.services {
+  @include ul-reset();
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.services__item {
+  position: relative;
+
+  box-sizing: border-box;
+  flex: 0 0 270px;
+  padding: 50px 35px 40px;
+
+  border: 2px solid #898989;
+  border-top-color: transparent;
+
+  color: #d8d8d8;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+
+    height: 2px;
+
+    background-image: linear-gradient(90deg, #898989 104px, transparent 104px, transparent 167px, #898989 167px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.services__item-title {
+  width: 130px;
+  margin: 0 auto;
+
+  font-family: #{$additional-font};
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.services__item-text {
+  margin: 0;
+  margin-top: 20px;
+
+  letter-spacing: 1px;
+}
+
+.services__item--graphic-design::after {
+  width: 25px;
+  height: 23px;
+
+  background-position: -5px -416px;
+}
+
+.services__item--website-design::after {
+  width: 27px;
+  height: 21px;
+
+  background-position: -5px -449px;
+}
+
+.services__item--seo::after {
+  width: 24px;
+  height: 22px;
+
+  background-position: -5px -323px;
+}
+
+.services__item--wordpress::after {
+  width: 21px;
+  height: 21px;
+
+  background-position: -5px -564px;
+}

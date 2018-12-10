@@ -1,0 +1,33 @@
+.logo {
+  cursor: default;
+
+  text-decoration: none;
+
+  &[href] {
+    cursor: pointer;
+  }
+}
+
+.logo__text {
+  vertical-align: middle;
+  margin-left: 10px;
+
+  font-family: #{$additional-font};
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $logo-font;
+
+  &--light {
+    color: $logo-font-light;
+  }
+}
+
+.logo img {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}

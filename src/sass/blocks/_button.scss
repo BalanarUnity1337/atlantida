@@ -1,0 +1,9 @@
+.button {
+  display: inline-block;
+
+  font-family: #{$additional-font};
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1em;
+  text-decoration: none;
+}

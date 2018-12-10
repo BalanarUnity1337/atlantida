@@ -1,0 +1,121 @@
+.section {
+
+  &--about {
+    padding-top: 73px;
+    padding-bottom: 63px;
+  }
+
+  &--services {
+    padding-top: 72px;
+    padding-bottom: 85px;
+
+    background-image: url("../img/services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--history {
+    position: relative;
+
+    padding-top: 60px;
+    padding-bottom: 82px;
+
+    background-color: #ededed;
+  }
+
+  &--our-team {
+    padding-top: 70px;
+    padding-bottom: 71px;
+
+    background-image: url("../img/team/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--portfolio {
+    padding-top: 80px;
+
+    background-color: #ffffff;
+  }
+
+  &--prices {
+    padding-top: 72px;
+    padding-bottom: 92px;
+  }
+
+  &--blog {
+    padding-top: 86px;
+  }
+
+  &--clients {
+    padding-top: 82px;
+    padding-bottom: 123px;
+  }
+}
+
+.section__inner {
+  @include container();
+}
+
+.section__header {
+  @include margin-reset();
+
+  position: relative;
+
+  width: 1130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+
+  font-family: #{$decorative-font};
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 400;
+  color: $section-header-font-color;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 186px;
+    height: 5px;
+
+    background-image: url("../img/wave-dark.png");
+    background-repeat: repeat-x;
+    background-size: 10px 5px;
+    background-position-x: -1px;
+  }
+}
+
+.section__text {
+  @include margin-reset();
+
+  width: 1030px;
+  margin: 33px auto 0;
+
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.section--light .section__header {
+  color: $section-header-font-color-light;
+
+  &::after {
+    background-image: url("../img/wave-light.png");
+  }
+}
+
+.section--light .section__text {
+  color: #cfcfcf;
+}
+
+.section--about .section__header {
+  margin-top: 62px;
+}

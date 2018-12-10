@@ -1,0 +1,13 @@
+.page-content-wrapper {
+  @include container();
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 86px;
+}
+
+.page-content-wrapper > .page-content {
+  flex: 0 0 821px;
+}

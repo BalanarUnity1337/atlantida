@@ -1,0 +1,134 @@
+.blogs-cards {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  max-width: 1600px;
+  margin: 73px auto 0;
+}
+
+.blogs-cards__blog {
+  flex: 0 0 25%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  &:nth-of-type(1) {
+    background-color: #424244;
+  }
+
+  &:nth-of-type(2) {
+    background-color: #2d2d2f;
+  }
+
+  &:nth-of-type(3) {
+    background-color: #232325;
+  }
+
+  &:nth-of-type(4) {
+    background-color: #555557;
+  }
+}
+
+.blogs-cards__blog:nth-of-type(even) .blogs-cards__blog-image {
+  order: 2;
+}
+
+.blogs-cards__blog:nth-of-type(even) .blogs-cards__blog-content {
+  order: 1;
+}
+
+.blogs-cards__blog:nth-of-type(odd) .blogs-cards__blog-image {
+  order: 1;
+}
+
+.blogs-cards__blog:nth-of-type(odd) .blogs-cards__blog-content {
+  order: 2;
+}
+
+.blogs-cards__blog-image {
+  max-width: 400px;
+  max-height: 412px;
+}
+
+.blogs-cards__blog-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.blogs-cards__blog-content {
+  box-sizing: border-box;
+  height: 412px;
+  padding: 52px 30px 68px;
+  overflow: hidden;
+}
+
+.blogs-cards__blog-top {
+  position: relative;
+
+  padding-bottom: 7px;
+
+  font-family: #{$italic-font};
+  font-size: 12px;
+  font-style: italic;
+  color: #e3e3e3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 151px;
+    height: 1px;
+
+    background-color: #565656;
+  }
+}
+
+.blogs-cards__blog-created {
+
+}
+
+.blogs-cards__blog-owner {
+
+}
+
+.blogs-cards__blog-title {
+  @include margin-reset();
+
+  position: relative;
+
+  margin-top: 19px;
+  padding-left: 12px;
+
+  font-family: #{$additional-font};
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #e3e3e3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 6px;
+    left: 0;
+
+    border-left: 4px solid #e3e3e3;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+}
+
+.blogs-cards__blog-text {
+  @include margin-reset();
+
+  margin-top: 28px;
+
+  color: #949494;
+  letter-spacing: 1px;
+}

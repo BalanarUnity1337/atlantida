@@ -1,0 +1,23 @@
+.main-nav {
+  @include ul-reset();
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-width: 870px;
+}
+
+.main-nav__item {
+  margin-right: 16px;
+
+  font-family: #{$additional-font};
+  font-size: 12px;
+  font-weight: 600;
+  color: $main-nav-font;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

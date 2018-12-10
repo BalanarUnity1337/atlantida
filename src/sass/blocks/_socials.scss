@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.socials__link {
+  position: relative;
+
+  margin-right: 10px;
+
+  font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    pointer-events: none;
+
+    background-color: $main-nav-font;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}

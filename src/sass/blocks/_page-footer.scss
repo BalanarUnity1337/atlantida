@@ -1,0 +1,135 @@
+.page-footer {
+  background-color: $footer-bg;
+  background-image: url("../img/page-footer-bg.jpg");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+
+  color: $footer-font;
+}
+
+.page-footer__inner {
+  @include container();
+
+  padding-top: 50px;
+}
+
+.page-footer__block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page-footer__contacts {
+  flex: 0 1 31.6%;
+}
+
+.page-footer__contact-about {
+  @include margin-reset();
+
+}
+
+.page-footer__contact-block {
+  margin-top: 38px;
+}
+
+.page-footer__contact-header {
+  font-family: #{$additional-font};
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $footer-font-light;
+  text-transform: uppercase;
+}
+
+.page-footer__contact-address {
+  @include margin-reset();
+
+}
+
+.page-footer__contact-email,
+.page-footer__contact-tel {
+  font-family: #{$additional-font};
+  font-size: 13px;
+  color: $footer-font-light;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.page-footer__contact-tel {
+  display: inline-block;
+}
+
+.page-footer__feedback {
+  flex: 0 1 65%;
+}
+
+.page-footer__feedback-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.page-footer__feedback-input {
+
+  flex: 0 1 48%;
+  margin-bottom: 22px;
+  padding: 18px 22px;
+
+  border: 2px solid $feedback-input-border;
+  background-color: transparent;
+
+  color: $footer-font;
+
+  &--textarea {
+    flex-basis: 100%;
+    min-height: 97px;
+
+    resize: none;
+  }
+
+  &::placeholder {
+    font-family: #{$italic-font};
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.page-footer__feedback-button {
+  @include button-reset();
+
+  padding: 13px 40px;
+
+  background-color: $feedback-button;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1em;
+  letter-spacing: 2px;
+  color: $footer-font-light;
+}
+
+.page-footer__copyright {
+  @include margin-reset();
+
+  margin-top: 60px;
+  padding-top: 35px;
+  padding-bottom: 34px;
+
+  border-top: 1px solid $footer-copy-border;
+}
+
+.page-footer .logo {
+  margin-bottom: 38px;
+}
+
+.page-footer .socials {
+  margin-top: 34px;
+}

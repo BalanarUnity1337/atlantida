@@ -1,0 +1,43 @@
+.page-title {
+  padding-top: 112px;
+  padding-bottom: 122px;
+
+  background-image: url("../img/page-title.jpg");
+
+  color: #ffffff;
+}
+
+.page-title__inner {
+  @include container();
+}
+
+.page-title__header {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 21px;
+
+  font-family: #{$decorative-font};
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 321px;
+    height: 5px;
+
+    background-image: url("../img/wave-light.png");
+    background-repeat: repeat-x;
+    background-size: 10px 5px;
+    background-position-x: 2px;
+  }
+}

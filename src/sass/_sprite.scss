@@ -1,0 +1,119 @@
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+
+  &--arrow {
+    width: 15px;
+    height: 50px;
+    background-position: -5px -5px;
+  }
+
+  &--award {
+    width: 38px;
+    height: 41px;
+    background-position: -5px -65px;
+  }
+
+  &--behance {
+    width: 16px;
+    height: 10px;
+    background-position: -5px -116px;
+  }
+
+  &--behance-dark {
+    width: 16px;
+    height: 10px;
+    background-position: -5px -136px;
+  }
+
+  &--briefcase {
+    width: 41px;
+    height: 37px;
+    background-position: -5px -156px;
+  }
+
+  &--businessman {
+    width: 33px;
+    height: 39px;
+    background-position: -5px -203px;
+  }
+
+  &--category {
+    width: 13px;
+    height: 11px;
+    background-position: -5px -252px;
+  }
+
+  &--checked-ckeckbox {
+    width: 41px;
+    height: 40px;
+    background-position: -5px -273px;
+  }
+
+  &--combo-chart {
+    width: 24px;
+    height: 22px;
+    background-position: -5px -323px;
+  }
+
+  &--comments {
+    width: 13px;
+    height: 11px;
+    background-position: -5px -355px;
+  }
+
+  &--facebook {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -376px;
+  }
+
+  &--facebook-dark {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -396px;
+  }
+
+  &--idea {
+    width: 25px;
+    height: 23px;
+    background-position: -5px -416px;
+  }
+
+  &--monitor {
+    width: 27px;
+    height: 21px;
+    background-position: -5px -449px;
+  }
+
+  &--search {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -480px;
+  }
+
+  &--twitter {
+    width: 11px;
+    height: 9px;
+    background-position: -5px -504px;
+  }
+
+  &--twitter-dark {
+    width: 11px;
+    height: 9px;
+    background-position: -5px -523px;
+  }
+
+  &--views {
+    width: 19px;
+    height: 12px;
+    background-position: -5px -542px;
+  }
+
+  &--wordpress {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -564px;
+  }
+}

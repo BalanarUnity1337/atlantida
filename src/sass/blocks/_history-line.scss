@@ -1,0 +1,14 @@
+.history-line {
+  display: block;
+  margin: 38px auto 0;
+}
+
+.history-line text {
+  pointer-events: none;
+
+  font-family: #{$additional-font};
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  fill: #3e3d3d;
+}

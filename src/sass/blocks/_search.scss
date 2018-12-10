@@ -1,0 +1,38 @@
+.search {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 16px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -480px;
+  }
+}
+
+.search__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 40px 11px 15px;
+
+  border: 1px solid #a8a8a8;
+  box-shadow: inset 0 0 0 1px #b4b4b4;
+  background-color: transparent;
+
+  &::placeholder {
+    font-family: #{$italic-font};
+    font-size: 14px;
+    font-style: italic;
+    color: $page-font-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

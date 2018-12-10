@@ -1,0 +1,15 @@
+.page-wrapper {
+  margin: 0;
+
+  background-color: #e3e3e3;
+
+  font-family: "Crimson Text Roman", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $page-font-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}

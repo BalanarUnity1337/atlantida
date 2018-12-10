@@ -1,0 +1,23 @@
+.page-header {
+  background-color: $header-bg;
+}
+
+.page-header__inner {
+  @include container();
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.page-header .logo {
+  flex: 1 1 auto;
+}
+
+.page-header .socials {
+  flex: 2.4 1 auto;
+  justify-content: flex-end;
+}
